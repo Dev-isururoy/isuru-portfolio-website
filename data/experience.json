@@ -1,0 +1,61 @@
+[
+  {
+    "id": "exp-001",
+    "title": "Executive Engineer – IT",
+    "company": "Kelun Lifesciences (Pvt) Ltd",
+    "location": "Kandy, Sri Lanka",
+    "period": "2025 – Present",
+    "current": true,
+    "description": "Lead infrastructure engineer responsible for planning, implementing, maintaining, securing, and continuously improving enterprise IT infrastructure across pharmaceutical manufacturing, laboratory, warehouse, and corporate environments.",
+    "highlights": [
+      "Administer enterprise-wide IT infrastructure supporting 200+ employees",
+      "Manage complete enterprise network infrastructure including LAN, Wi-Fi, VPN, managed switches",
+      "Administer Windows Server infrastructure, Active Directory, Group Policy",
+      "Manage VMware ESXi virtualization hosting production-critical VMs",
+      "Maintain 100+ TB enterprise storage (Synology RackStation, QSAN NAS)",
+      "Design and administer 250+ TB backup infrastructure using Veeam",
+      "Deploy and maintain Zabbix monitoring for 200+ network devices",
+      "Manage Microsoft 365 tenant with MFA, user provisioning",
+      "Administer enterprise CCTV using HikCentral Professional",
+      "Lead deployment of SCADA, HPLC, and environmental monitoring systems",
+      "Maintain GMP, EU-GMP, ISO, NMRA, SLAB compliance documentation",
+      "Develop PowerShell automation reducing tasks by 30%",
+      "Manage 400+ IT assets with complete lifecycle tracking"
+    ]
+  },
+  {
+    "id": "exp-002",
+    "title": "IT Engineer",
+    "company": "Kelun Lifesciences (Pvt) Ltd",
+    "location": "Kandy, Sri Lanka",
+    "period": "2025",
+    "current": false,
+    "description": "Promoted to independently manage enterprise servers, infrastructure administration, compliance documentation, Active Directory, virtualization, backup solutions, and critical infrastructure projects.",
+    "highlights": [
+      "Independent management of enterprise server infrastructure",
+      "Active Directory administration and Group Policy",
+      "Virtualization environment management",
+      "Enterprise backup solution administration",
+      "Vendor coordination and project delivery",
+      "Compliance documentation and audit support"
+    ]
+  },
+  {
+    "id": "exp-003",
+    "title": "Trainee IT Engineer",
+    "company": "Kelun Lifesciences (Pvt) Ltd",
+    "location": "Kandy, Sri Lanka",
+    "period": "2024",
+    "current": false,
+    "description": "Started career supporting enterprise IT operations while gaining practical experience across all domains of pharmaceutical IT infrastructure.",
+    "highlights": [
+      "Network administration and troubleshooting",
+      "Windows Server management support",
+      "End-user support for 200+ users",
+      "Infrastructure maintenance and monitoring",
+      "Enterprise storage operations",
+      "Laboratory systems support",
+      "Regulatory compliance exposure"
+    ]
+  }
+]

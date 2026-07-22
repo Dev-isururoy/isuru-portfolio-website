@@ -1,0 +1,35 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Post {
+  id        String   @id @default(uuid())
+  title     String
+  content   String
+  imagePath String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Project {
+  id              String   @id @default(uuid())
+  title           String
+  category        String
+  duration        String?
+  organization    String?
+  role            String?
+  description     String
+  longDescription String?
+  achievements    String?  // JSON array stored as string
+  scope           String?  // JSON array stored as string
+  tags            String   // JSON array stored as string
+  status          String   @default("completed")
+  imagePath       String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}

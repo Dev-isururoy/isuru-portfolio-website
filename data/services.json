@@ -1,0 +1,44 @@
+[
+  {
+    "id": "svc-001",
+    "title": "Network Infrastructure Design",
+    "icon": "network",
+    "description": "Complete enterprise network architecture design and deployment including LAN, WAN, VLAN, wireless, VPN, and network security implementation.",
+    "features": ["Network Architecture", "VLAN Segmentation", "Wireless Deployment", "VPN Setup", "Firewall Configuration"]
+  },
+  {
+    "id": "svc-002",
+    "title": "Server & Systems Administration",
+    "icon": "server",
+    "description": "Windows Server deployment, Active Directory management, Group Policy, and enterprise systems administration for mission-critical environments.",
+    "features": ["Windows Server", "Active Directory", "Group Policy", "DNS/DHCP", "File Services"]
+  },
+  {
+    "id": "svc-003",
+    "title": "Virtualization Solutions",
+    "icon": "cloud",
+    "description": "VMware ESXi and vSphere virtualization platform design, deployment, and management for optimal resource utilization and business continuity.",
+    "features": ["VMware ESXi", "vSphere", "VM Management", "Resource Optimization", "High Availability"]
+  },
+  {
+    "id": "svc-004",
+    "title": "Backup & Disaster Recovery",
+    "icon": "shield",
+    "description": "Enterprise backup architecture using Veeam with comprehensive disaster recovery planning, testing, and validation procedures.",
+    "features": ["Veeam B&R", "Backup Strategy", "DR Planning", "Recovery Testing", "Data Protection"]
+  },
+  {
+    "id": "svc-005",
+    "title": "Cybersecurity & Monitoring",
+    "icon": "lock",
+    "description": "Infrastructure security hardening, Zabbix monitoring deployment, CCTV systems, access control, and comprehensive security posture management.",
+    "features": ["Zabbix Monitoring", "CCTV Systems", "Access Control", "Security Hardening", "Endpoint Security"]
+  },
+  {
+    "id": "svc-006",
+    "title": "IT Automation & Scripting",
+    "icon": "code",
+    "description": "PowerShell automation, process optimization, and custom tooling development to streamline IT operations and reduce manual workload.",
+    "features": ["PowerShell Scripts", "Process Automation", "Task Scheduling", "Custom Tools", "Reporting"]
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "profile": {
+    "name": "Isuru Thennakoon",
+    "title": "Executive Engineer – IT",
+    "subtitle": "Infrastructure Engineer | Network Administrator | Systems Administrator",
+    "email": "dev.isururoy@gmail.com",
+    "phone": "+94 760579069",
+    "location": "Kandy, Sri Lanka",
+    "linkedin": "https://linkedin.com/in/isuruthennakoon",
+    "github": "",
+    "website": "",
+    "avatar": "/uploads/avatar.jpg",
+    "bio": "Highly accomplished Executive Engineer – IT with over 3 years of progressive experience designing, implementing, securing, and maintaining enterprise IT infrastructure within a highly regulated pharmaceutical manufacturing environment. Demonstrated record of rapid career advancement through three promotions within two years based on technical excellence, leadership, and project delivery.",
+    "shortBio": "I design, build, and secure enterprise IT infrastructure for pharmaceutical manufacturing. Passionate about automation, cybersecurity, and building resilient systems.",
+    "resumeUrl": "/uploads/resume.pdf",
+    "availableForHire": true
+  },
+  "site": {
+    "title": "Isuru Thennakoon | IT Infrastructure Engineer",
+    "description": "Portfolio of Isuru Thennakoon — Executive Engineer IT specializing in enterprise infrastructure, network administration, cybersecurity, and systems administration.",
+    "accentColor": "#39FF14",
+    "logoText": "ISURU",
+    "copyright": "Isuru Thennakoon"
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/in/isuruthennakoon",
+    "github": "",
+    "twitter": "",
+    "instagram": "",
+    "youtube": ""
+  }
+}

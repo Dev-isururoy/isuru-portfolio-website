@@ -1,0 +1,29 @@
+[
+  {
+    "id": "test-001",
+    "name": "Department Head",
+    "role": "Manufacturing Operations",
+    "company": "Kelun Lifesciences",
+    "quote": "Isuru has been instrumental in maintaining our critical IT infrastructure with zero downtime during multiple regulatory audits. His proactive approach to monitoring and maintenance has significantly improved our operational efficiency.",
+    "rating": 5,
+    "visible": true
+  },
+  {
+    "id": "test-002",
+    "name": "Quality Assurance Manager",
+    "role": "QA Department",
+    "company": "Kelun Lifesciences",
+    "quote": "The HPLC server deployment and CSV documentation that Isuru led were executed flawlessly. His understanding of GMP compliance requirements in IT systems is exceptional.",
+    "rating": 5,
+    "visible": true
+  },
+  {
+    "id": "test-003",
+    "name": "IT Director",
+    "role": "IT Department",
+    "company": "Kelun Lifesciences",
+    "quote": "Three promotions in two years speaks for itself. Isuru consistently delivers enterprise-grade solutions while maintaining the highest standards of documentation and compliance.",
+    "rating": 5,
+    "visible": true
+  }
+]

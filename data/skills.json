@@ -1,0 +1,90 @@
+[
+  {
+    "id": "sk-001",
+    "category": "Enterprise Infrastructure",
+    "skills": [
+      { "name": "Infrastructure Administration", "level": 95 },
+      { "name": "IT Operations Management", "level": 90 },
+      { "name": "Systems Administration", "level": 95 },
+      { "name": "Disaster Recovery Planning", "level": 90 },
+      { "name": "High Availability Infrastructure", "level": 88 },
+      { "name": "Capacity Planning", "level": 85 }
+    ]
+  },
+  {
+    "id": "sk-002",
+    "category": "Network Administration",
+    "skills": [
+      { "name": "Enterprise LAN/WAN", "level": 92 },
+      { "name": "VLAN & Network Segmentation", "level": 90 },
+      { "name": "Firewall Administration", "level": 88 },
+      { "name": "DNS / DHCP", "level": 95 },
+      { "name": "VPN Configuration", "level": 85 },
+      { "name": "Wireless Infrastructure", "level": 88 }
+    ]
+  },
+  {
+    "id": "sk-003",
+    "category": "Windows Infrastructure",
+    "skills": [
+      { "name": "Windows Server 2016/2019", "level": 95 },
+      { "name": "Active Directory", "level": 95 },
+      { "name": "Group Policy Management", "level": 92 },
+      { "name": "File & Print Services", "level": 90 },
+      { "name": "WSUS / Windows Updates", "level": 88 }
+    ]
+  },
+  {
+    "id": "sk-004",
+    "category": "Virtualization & Storage",
+    "skills": [
+      { "name": "VMware ESXi / vSphere", "level": 90 },
+      { "name": "Synology RackStation", "level": 92 },
+      { "name": "QSAN NAS", "level": 88 },
+      { "name": "RAID Configuration", "level": 90 },
+      { "name": "Veeam Backup & Replication", "level": 92 }
+    ]
+  },
+  {
+    "id": "sk-005",
+    "category": "Security & Monitoring",
+    "skills": [
+      { "name": "Zabbix Monitoring", "level": 90 },
+      { "name": "Enterprise CCTV / HikCentral", "level": 92 },
+      { "name": "Endpoint Security", "level": 88 },
+      { "name": "Security Hardening", "level": 85 },
+      { "name": "Access Control Systems", "level": 90 }
+    ]
+  },
+  {
+    "id": "sk-006",
+    "category": "Microsoft 365 & Cloud",
+    "skills": [
+      { "name": "Microsoft 365 Administration", "level": 90 },
+      { "name": "Microsoft Entra ID", "level": 85 },
+      { "name": "MFA Implementation", "level": 90 },
+      { "name": "Teams / OneDrive / SharePoint", "level": 88 }
+    ]
+  },
+  {
+    "id": "sk-007",
+    "category": "Automation & Scripting",
+    "skills": [
+      { "name": "PowerShell", "level": 88 },
+      { "name": "Batch Scripting", "level": 85 },
+      { "name": "Process Automation", "level": 85 },
+      { "name": "Scheduled Tasks", "level": 90 }
+    ]
+  },
+  {
+    "id": "sk-008",
+    "category": "Compliance & Documentation",
+    "skills": [
+      { "name": "GMP / EU-GMP", "level": 92 },
+      { "name": "ISO Standards", "level": 88 },
+      { "name": "SOP Development", "level": 90 },
+      { "name": "CSV Documentation", "level": 88 },
+      { "name": "Audit Preparation", "level": 92 }
+    ]
+  }
+]
