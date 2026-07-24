@@ -29,7 +29,7 @@ export default function ServerRackGraphic() {
           {/* Activity / Power LEDs */}
           <div className="flex gap-1 ml-auto">
              <div className="server-led" style={{ animationDelay: generateDelay(), animationDuration: `${0.2 + Math.random()}s`, opacity: 0.8 }} />
-             <div className="server-led" style={{ animation: 'none', background: '#39FF14' }} /> {/* Solid power light */}
+             <div className="server-led" style={{ animation: 'none', background: 'var(--accent)' }} /> {/* Solid power light */}
           </div>
         </div>
       ))}

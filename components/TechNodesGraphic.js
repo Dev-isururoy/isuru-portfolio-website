@@ -47,7 +47,7 @@ export default function TechNodesGraphic() {
             cx={node.cx}
             cy={node.cy}
             r="5"
-            fill="#39FF14"
+            fill="var(--accent)"
             className="node-dot"
             style={{
               animationDelay: `${Math.random() * 3}s`
