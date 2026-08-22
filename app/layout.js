@@ -13,6 +13,8 @@ export const metadata = {
   },
 };
 
+import WhatsAppWidget from '@/components/WhatsAppWidget';
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -23,6 +25,7 @@ export default function RootLayout({ children }) {
       </head>
       <body suppressHydrationWarning>
         {children}
+        <WhatsAppWidget />
       </body>
     </html>
   );

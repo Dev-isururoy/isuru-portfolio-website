@@ -1,0 +1,158 @@
+[
+  {
+    "category": "Networking",
+    "items": [
+      {
+        "name": "Cisco Catalyst Switches",
+        "description": "Managed Layer 2/3 switches for enterprise VLAN segmentation, inter-VLAN routing, and network access control.",
+        "icon": "🔌",
+        "proficiency": 95
+      },
+      {
+        "name": "MikroTik RouterOS",
+        "description": "Advanced routing, firewall rules, bandwidth management, and VPN tunneling for branch office connectivity.",
+        "icon": "📡",
+        "proficiency": 90
+      },
+      {
+        "name": "Ubiquiti UniFi",
+        "description": "Enterprise wireless access points and network management for seamless campus-wide Wi-Fi coverage.",
+        "icon": "📶",
+        "proficiency": 85
+      },
+      {
+        "name": "Wireshark",
+        "description": "Deep packet inspection and network protocol analysis for troubleshooting and security auditing.",
+        "icon": "🔍",
+        "proficiency": 88
+      }
+    ]
+  },
+  {
+    "category": "Servers & Virtualization",
+    "items": [
+      {
+        "name": "VMware vSphere / ESXi",
+        "description": "Enterprise hypervisor for deploying and managing virtual machines across clustered hosts with HA and vMotion.",
+        "icon": "🖥️",
+        "proficiency": 92
+      },
+      {
+        "name": "Windows Server 2019/2022",
+        "description": "Active Directory, Group Policy, DNS, DHCP, and file server administration for domain environments.",
+        "icon": "🪟",
+        "proficiency": 95
+      },
+      {
+        "name": "Proxmox VE",
+        "description": "Open-source virtualization platform for KVM virtual machines and LXC containers in the home lab.",
+        "icon": "🐧",
+        "proficiency": 80
+      },
+      {
+        "name": "Dell PowerEdge Servers",
+        "description": "Rack-mounted enterprise servers with iDRAC remote management for production and lab workloads.",
+        "icon": "🗄️",
+        "proficiency": 90
+      }
+    ]
+  },
+  {
+    "category": "Storage & Backup",
+    "items": [
+      {
+        "name": "Veeam Backup & Replication",
+        "description": "Enterprise backup solution for VMs, physical servers, and cloud workloads with instant recovery capabilities.",
+        "icon": "💾",
+        "proficiency": 90
+      },
+      {
+        "name": "Synology NAS",
+        "description": "Network-attached storage for centralized file sharing, automated backups, and media streaming.",
+        "icon": "📦",
+        "proficiency": 85
+      },
+      {
+        "name": "Windows Server Backup",
+        "description": "Native backup tool for system state, bare-metal recovery, and scheduled volume backups.",
+        "icon": "🔄",
+        "proficiency": 88
+      }
+    ]
+  },
+  {
+    "category": "Security & Monitoring",
+    "items": [
+      {
+        "name": "pfSense / OPNsense",
+        "description": "Open-source firewall and router platform with IDS/IPS, VPN, and traffic shaping capabilities.",
+        "icon": "🛡️",
+        "proficiency": 85
+      },
+      {
+        "name": "PRTG Network Monitor",
+        "description": "Comprehensive network monitoring with sensors for bandwidth, uptime, hardware health, and SNMP.",
+        "icon": "📊",
+        "proficiency": 82
+      },
+      {
+        "name": "Sophos XG Firewall",
+        "description": "Next-gen firewall with web filtering, application control, and advanced threat protection.",
+        "icon": "🔒",
+        "proficiency": 80
+      },
+      {
+        "name": "CrowdStrike Falcon",
+        "description": "Cloud-native endpoint detection and response (EDR) platform for real-time threat hunting.",
+        "icon": "🦅",
+        "proficiency": 75
+      }
+    ]
+  },
+  {
+    "category": "Scripting & Automation",
+    "items": [
+      {
+        "name": "PowerShell",
+        "description": "Automation scripts for Active Directory management, system administration, and scheduled maintenance tasks.",
+        "icon": "⚡",
+        "proficiency": 88
+      },
+      {
+        "name": "Ansible",
+        "description": "Agentless configuration management and infrastructure automation across Linux and Windows environments.",
+        "icon": "🤖",
+        "proficiency": 72
+      },
+      {
+        "name": "Bash / Shell Scripting",
+        "description": "Linux system automation, cron job scheduling, and server provisioning scripts.",
+        "icon": "🐚",
+        "proficiency": 78
+      }
+    ]
+  },
+  {
+    "category": "Lab Environment",
+    "items": [
+      {
+        "name": "Home Lab Rack",
+        "description": "12U server rack housing Dell PowerEdge servers, Cisco switches, UPS, and patch panels for hands-on testing.",
+        "icon": "🏗️",
+        "proficiency": 95
+      },
+      {
+        "name": "GNS3 / EVE-NG",
+        "description": "Network emulators for simulating complex multi-vendor topologies and practicing certifications.",
+        "icon": "🌐",
+        "proficiency": 82
+      },
+      {
+        "name": "Docker",
+        "description": "Containerization for deploying isolated lab services — DNS, web servers, monitoring stacks, and databases.",
+        "icon": "🐳",
+        "proficiency": 75
+      }
+    ]
+  }
+]

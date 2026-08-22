@@ -2537,3 +2537,197 @@ ul, ol {
   background: rgba(255,255,255,0.1);
   border-color: rgba(255,255,255,0.2);
 }
+
+/* =============================================
+   WHATSAPP FLOATING WIDGET
+   ============================================= */
+
+/* Floating Action Button */
+.wa-fab {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #25D366;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 24px rgba(37, 211, 102, 0.4);
+  z-index: 500;
+  opacity: 0;
+  transform: scale(0) translateY(20px);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.wa-fab-visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+.wa-fab:hover {
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: 0 6px 32px rgba(37, 211, 102, 0.5);
+}
+
+.wa-fab:active {
+  transform: scale(0.95);
+}
+
+/* Pulse Ring */
+.wa-fab-pulse {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #25D366;
+  animation: waPulse 2s ease-out infinite;
+  pointer-events: none;
+}
+
+@keyframes waPulse {
+  0% { transform: scale(1); opacity: 0.6; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
+
+/* Chat Popup */
+.wa-popup {
+  position: fixed;
+  bottom: 6.5rem;
+  right: 2rem;
+  width: 360px;
+  max-width: calc(100vw - 2rem);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  z-index: 501;
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.wa-popup-open {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: all;
+}
+
+/* Popup Header */
+.wa-popup-header {
+  background: linear-gradient(135deg, #075E54, #128C7E);
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wa-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Popup Body */
+.wa-popup-body {
+  background: #0b141a;
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  padding: 1.25rem;
+  min-height: 100px;
+}
+
+.wa-message-bubble {
+  background: #1f2c34;
+  border-radius: 0 12px 12px 12px;
+  padding: 0.85rem 1rem;
+  max-width: 85%;
+  color: #e9edef;
+  position: relative;
+}
+
+.wa-message-bubble::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -8px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid #1f2c34;
+  border-left: 8px solid transparent;
+}
+
+/* Popup Footer / Input */
+.wa-popup-footer {
+  background: #1f2c34;
+  padding: 0.75rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.wa-input {
+  flex: 1;
+  background: #2a3942;
+  border: none;
+  border-radius: 24px;
+  padding: 0.65rem 1rem;
+  color: #e9edef;
+  font-size: 0.85rem;
+  font-family: var(--font-sans);
+  outline: none;
+  transition: background 0.2s;
+}
+
+.wa-input::placeholder {
+  color: rgba(233, 237, 239, 0.4);
+}
+
+.wa-input:focus {
+  background: #323f49;
+}
+
+.wa-send-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #25D366;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+
+.wa-send-btn:hover {
+  background: #20bd5a;
+  transform: scale(1.05);
+}
+
+/* Mobile adjustments */
+@media (max-width: 640px) {
+  .wa-fab {
+    bottom: 5.5rem;
+    right: 1rem;
+    width: 54px;
+    height: 54px;
+  }
+  .wa-popup {
+    bottom: 10rem;
+    right: 1rem;
+    left: 1rem;
+    width: auto;
+    max-width: none;
+  }
+}
+
