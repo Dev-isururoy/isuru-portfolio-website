@@ -2,12 +2,9 @@
 
 import { cookies } from 'next/headers';
 import { SignJWT } from 'jose';
-import { PrismaClient } from '@prisma/client';
+import { getPrisma } from '@/lib/prisma';
 import fs from 'fs';
 import path from 'path';
-
-const prisma = new PrismaClient();
-
 export async function login(formData) {
   const username = formData.get('username');
   const password = formData.get('password');
@@ -40,6 +37,8 @@ export async function createPost(formData) {
   const cookieStore = await cookies();
   const token = cookieStore.get('admin_token')?.value;
   if (!token) throw new Error('Unauthorized');
+
+  const prisma = getPrisma();
 
   const title = formData.get('title');
   const content = formData.get('content');
@@ -75,6 +74,8 @@ export async function deletePost(id) {
   const cookieStore = await cookies();
   const token = cookieStore.get('admin_token')?.value;
   if (!token) throw new Error('Unauthorized');
+
+  const prisma = getPrisma();
 
   await prisma.post.delete({
     where: { id }

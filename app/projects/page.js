@@ -1,9 +1,8 @@
-import { PrismaClient } from '@prisma/client';
+import { getPrisma } from '@/lib/prisma';
 import ProjectsClient from './ProjectsClient';
 
-const prisma = new PrismaClient();
-
 export default async function ProjectsPage() {
+  const prisma = getPrisma();
   const dbProjects = await prisma.project.findMany({
     orderBy: { createdAt: 'desc' }
   });

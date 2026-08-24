@@ -1,15 +1,14 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollReveal from '@/components/ScrollReveal';
-import { PrismaClient } from '@prisma/client';
+import { getPrisma } from '@/lib/prisma';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-
-const prisma = new PrismaClient();
 
 export const dynamic = 'force-dynamic';
 
 export default async function BlogPost({ params }) {
+  const prisma = getPrisma();
   const { id } = await params;
   const post = await prisma.post.findUnique({ where: { id } });
 

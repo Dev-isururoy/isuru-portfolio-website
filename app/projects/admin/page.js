@@ -1,12 +1,11 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { PrismaClient } from '@prisma/client';
+import { getPrisma } from '@/lib/prisma';
 import AdminProjectForm from './AdminProjectForm';
 import AdminProjectList from './AdminProjectList';
 
-const prisma = new PrismaClient();
-
 export default async function AdminDashboard() {
+  const prisma = getPrisma();
   const projects = await prisma.project.findMany({
     orderBy: { createdAt: 'desc' }
   });

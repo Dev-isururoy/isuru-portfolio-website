@@ -1,10 +1,8 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollReveal from '@/components/ScrollReveal';
-import { PrismaClient } from '@prisma/client';
+import { getPrisma } from '@/lib/prisma';
 import Link from 'next/link';
-
-const prisma = new PrismaClient();
 
 export const dynamic = 'force-dynamic';
 
@@ -13,6 +11,7 @@ function stripHtml(html) {
 }
 
 export default async function Blog() {
+  const prisma = getPrisma();
   const dbPosts = await prisma.post.findMany({
     orderBy: { createdAt: 'desc' }
   });
