@@ -8,14 +8,14 @@ export default function WhatsAppWidget() {
   const [message, setMessage] = useState('');
   const pathname = usePathname();
 
-  // Hide on admin pages
-  if (pathname?.includes('/admin') || pathname?.includes('/login')) return null;
-
   // Show widget after a short delay for smooth entrance
   useEffect(() => {
     const timer = setTimeout(() => setIsVisible(true), 2000);
     return () => clearTimeout(timer);
   }, []);
+
+  // Keep every hook above this route-dependent return so navigation preserves hook order.
+  if (pathname?.includes('/admin') || pathname?.includes('/login')) return null;
 
   const phoneNumber = '94701234377';
   const defaultMessage = 'Hi Isuru! I visited your portfolio and would like to discuss a project.';
