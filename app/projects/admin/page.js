@@ -1,6 +1,8 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { getPrisma } from '@/lib/prisma';
+
+export const dynamic = 'force-dynamic';
 import AdminProjectForm from './AdminProjectForm';
 import AdminProjectList from './AdminProjectList';
 

@@ -1,10 +1,22 @@
-name = "portfolio"
-compatibility_date = "2024-03-20"
+name = "isuru-thennakoon"
+main = ".open-next/worker.js"
+compatibility_date = "2026-08-27"
 compatibility_flags = ["nodejs_compat"]
-pages_build_output_dir = ".vercel/output/static"
-pages_build_command = "npm run pages:build"
+workers_dev = true
+
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
+
+[[services]]
+binding = "WORKER_SELF_REFERENCE"
+service = "isuru-thennakoon"
 
 [[d1_databases]]
 binding = "DB"
-database_name = "portfolio-db"
-database_id = "2d338931-31ba-4b16-b32d-4e4e0f7aa1f4"
+database_name = "isuru-thennakoon-db"
+database_id = "216becae-e5a2-4aec-9e5e-9354a1d7d4b6"
+
+[[kv_namespaces]]
+binding = "CONTENT"
+id = "80dee0a10a784243a19e2c87418d5fb9"

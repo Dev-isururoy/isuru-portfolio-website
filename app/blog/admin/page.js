@@ -4,6 +4,8 @@ import { getPrisma } from '@/lib/prisma';
 import AdminForm from './AdminForm';
 import AdminPostList from './AdminPostList';
 
+export const dynamic = 'force-dynamic';
+
 export default async function AdminDashboard() {
   const prisma = getPrisma();
   const posts = await prisma.post.findMany({

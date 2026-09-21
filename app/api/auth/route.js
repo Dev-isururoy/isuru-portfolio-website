@@ -1,11 +1,14 @@
 import { NextResponse } from 'next/server';
+import { login } from '@/app/actions/blog';
 
 export async function POST(request) {
   try {
     const { password } = await request.json();
-    const adminPassword = process.env.ADMIN_PASSWORD || 'admin123';
-    
-    if (password === adminPassword) {
+    const formData = new FormData();
+    formData.set('username', process.env.ADMIN_USERNAME || '');
+    formData.set('password', password || '');
+    const result = await login(formData);
+    if (result.success) {
       return NextResponse.json({ success: true, token: 'authenticated' });
     }
     

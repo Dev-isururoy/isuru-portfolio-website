@@ -3,8 +3,8 @@
 import { cookies } from 'next/headers';
 import { SignJWT } from 'jose';
 import { getPrisma } from '@/lib/prisma';
-import fs from 'fs';
-import path from 'path';
+import { saveUpload } from '@/lib/uploads';
+import { requireAdmin } from '@/lib/auth';
 
 export async function login(formData) {
   const username = formData.get('username');
@@ -35,9 +35,7 @@ export async function logout() {
 }
 
 export async function createProject(formData) {
-  const cookieStore = await cookies();
-  const token = cookieStore.get('admin_token')?.value;
-  if (!token) throw new Error('Unauthorized');
+  await requireAdmin();
 
   const prisma = getPrisma();
 
@@ -56,20 +54,7 @@ export async function createProject(formData) {
   const tags = formData.get('tags') ? JSON.stringify(formData.get('tags').split(',').map(s => s.trim()).filter(s => s)) : '[]';
 
   const image = formData.get('image');
-  let imagePath = null;
-
-  if (image && image.size > 0) {
-    const buffer = Buffer.from(await image.arrayBuffer());
-    const uploadDir = path.join(process.cwd(), 'public/uploads');
-    if (!fs.existsSync(uploadDir)) {
-      fs.mkdirSync(uploadDir, { recursive: true });
-    }
-    
-    const fileName = `${Date.now()}-${image.name.replace(/[^a-zA-Z0-9.]/g, '')}`;
-    const filePath = path.join(uploadDir, fileName);
-    fs.writeFileSync(filePath, buffer);
-    imagePath = `/uploads/${fileName}`;
-  }
+  const imagePath = await saveUpload(image);
 
   await prisma.project.create({
     data: {
@@ -92,9 +77,7 @@ export async function createProject(formData) {
 }
 
 export async function deleteProject(id) {
-  const cookieStore = await cookies();
-  const token = cookieStore.get('admin_token')?.value;
-  if (!token) throw new Error('Unauthorized');
+  await requireAdmin();
 
   const prisma = getPrisma();
 
